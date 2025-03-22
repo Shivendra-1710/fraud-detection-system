@@ -46,7 +46,7 @@ pip install -r requirements.txt
 
 3. Run the application:
 ```bash
-uvicorn app.main:app --reload
+python scripts/run_pipeline.py
 ```
 
 ## Technologies Used
