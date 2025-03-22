@@ -14,15 +14,21 @@ An advanced fraud detection system using machine learning and deep learning tech
 ## Project Structure
 
 ```
-├── data/              # Dataset storage
-├── models/           # Trained models
-├── notebooks/        # Jupyter notebooks for analysis
-├── src/              # Source code
-│   ├── preprocessing/ # Data preprocessing scripts
-│   ├── models/       # Machine learning models
-│   ├── api/         # Flask API
+├── app/              # FastAPI application
+│   ├── main.py      # Main application file
+│   ├── schemas/     # Data models
+│   ├── services/    # Business logic
 │   └── utils/       # Utility functions
-└── requirements.txt  # Project dependencies
+├── scripts/         # Utility scripts
+│   ├── data_preprocessing.py
+│   ├── model_training.py
+│   ├── run_pipeline.py
+│   └── test_api.py
+├── data/            # Dataset storage
+│   ├── raw/        # Raw dataset
+│   └── processed/  # Processed data
+├── models/          # Trained models
+└── requirements.txt # Project dependencies
 ```
 
 ## Setup Instructions
@@ -40,7 +46,7 @@ pip install -r requirements.txt
 
 3. Run the application:
 ```bash
-python src/api/app.py
+uvicorn app.main:app --reload
 ```
 
 ## Technologies Used
