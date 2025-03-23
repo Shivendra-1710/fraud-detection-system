@@ -11,3 +11,4 @@ requests==2.31.0
 scikit-plot==0.3.7
 matplotlib==3.7.2
 seaborn==0.12.2
+jinja2
